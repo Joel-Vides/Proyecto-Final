@@ -28,5 +28,13 @@ namespace Library.API.Controllers
                 response.Data
             });
         }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<ResponseDto<BooksActionResponseDto>>> Delete(Guid id)
+        {
+            var response = await _libraryService.DeleteAsync(id);
+
+            return StatusCode(response.StatusCode, response);
+        }
     }
 }

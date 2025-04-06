@@ -5,7 +5,18 @@ meta {
 }
 
 post {
-  url: 
-  body: none
+  url: https://localhost:7018/api/library
+  body: json
   auth: inherit
+}
+
+body:json {
+  {
+    "bookName": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes Saavedra",
+    "type": "Novela",
+    "volume": 1,
+    "publisher": "Sahara Publisher Books",
+    "publicationDate": "1605-01-01"
+  }
 }

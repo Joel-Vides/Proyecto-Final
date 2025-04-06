@@ -6,5 +6,6 @@ namespace Library.API.Services.Interfaces
     public interface ILibraryService
     {
         Task<ResponseDto<BooksActionResponseDto>> CreateAsync(BookCreateDto dto);
+        Task<ResponseDto<BooksActionResponseDto>> DeleteAsync(Guid id);
     }
 }
