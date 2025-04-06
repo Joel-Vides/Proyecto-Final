@@ -9,7 +9,7 @@ namespace Library.API.Database
         {
             
         }
-
+        //Para la Tabla de los Libros
         public DbSet<LibraryEntity> Library { get; set; }
     }
 }

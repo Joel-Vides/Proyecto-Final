@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "Library.API.Controllers.LibraryController",
+    "Method": "Post",
+    "RelativePath": "api/library",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Library.API.Dtos.Books.BookCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Library.API.Dtos.Common.ResponseDto\u00601[[Library.API.Dtos.Books.BooksActionResponseDto, Library.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

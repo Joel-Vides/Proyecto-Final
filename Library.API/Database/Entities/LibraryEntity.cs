@@ -4,6 +4,7 @@ using Library.API.Database.Entities.Common;
 
 namespace Library.API.Database.Entities
 {
+    //Tabla Para Ingresar Datos de los Libros
     [Table("Library")]
     public class LibraryEntity : BaseEntity
     {
