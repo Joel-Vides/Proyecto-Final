@@ -1,12 +1,54 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|c:\\users\\joelv\\projectspoo\\unidad3\\library\\library.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|solutionrelative:library.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|c:\\users\\joelv\\projectspoo\\unidad3\\library\\library.api\\database\\entities\\libraryentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|solutionrelative:library.api\\database\\entities\\libraryentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Program.cs",
+              "RelativeDocumentMoniker": "Library.API\\Program.cs",
+              "ToolTip": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Program.cs",
+              "RelativeToolTip": "Library.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T02:12:57.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LibraryEntity.cs",
+              "DocumentMoniker": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Database\\Entities\\LibraryEntity.cs",
+              "RelativeDocumentMoniker": "Library.API\\Database\\Entities\\LibraryEntity.cs",
+              "ToolTip": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Database\\Entities\\LibraryEntity.cs",
+              "RelativeToolTip": "Library.API\\Database\\Entities\\LibraryEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T02:06:09.227Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

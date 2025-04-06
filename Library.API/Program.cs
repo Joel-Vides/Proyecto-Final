@@ -1,9 +1,21 @@
+using Library.API.Database;
+using Library.API.Services;
+using Library.API.Services.Interfaces;
+using Microsoft.EntityFrameworkCore;
+using Scalar.AspNetCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.Services.AddDbContext<LibraryDBContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+
+builder.Services.AddTransient<ILibraryService, LibraryService>();
+
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
@@ -12,6 +24,7 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
+    app.MapScalarApiReference();
 }
 
 app.UseHttpsRedirection();
