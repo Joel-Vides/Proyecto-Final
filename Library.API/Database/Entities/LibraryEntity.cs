@@ -28,8 +28,11 @@ namespace Library.API.Database.Entities
         [Required]
         public string Publisher { get; set; }
 
-        [Column("publication_date")]
+        [Column("publication_year")]
         [Required]
-        public DateTime PublicationDate { get; set; }
+        public int PublicationYear { get; set; }
+
+
+
     }
 }

@@ -11,6 +11,6 @@ namespace Library.API.Dtos.Books
         public string Type { get; set; }
         public int Volume { get; set; }
         public string Publisher { get; set; }
-        public DateTime PublicationDate { get; set; }
+        public int PublicationYear { get; set; }
     }
 }

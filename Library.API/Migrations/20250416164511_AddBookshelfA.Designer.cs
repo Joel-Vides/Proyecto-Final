@@ -3,6 +3,7 @@ using System;
 using Library.API.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Library.API.Migrations
 {
     [DbContext(typeof(LibraryDBContext))]
-    partial class LibraryDBContextModelSnapshot : ModelSnapshot
+    [Migration("20250416164511_AddBookshelfA")]
+    partial class AddBookshelfA
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.3");
@@ -80,9 +83,9 @@ namespace Library.API.Migrations
                         .HasColumnType("TEXT")
                         .HasColumnName("created_date");
 
-                    b.Property<int>("PublicationYear")
-                        .HasColumnType("INTEGER")
-                        .HasColumnName("publication_year");
+                    b.Property<DateTime>("PublicationDate")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("publication_date");
 
                     b.Property<string>("Publisher")
                         .IsRequired()

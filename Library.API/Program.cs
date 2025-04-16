@@ -19,6 +19,8 @@ builder.Services.AddControllers();
 
 builder.Services.AddTransient<ILibraryService, LibraryService>();
 
+builder.Services.AddTransient<IBookshelfAService, BookshelfAService>();
+
 builder.Services.AddOpenApi();
 
 var app = builder.Build();

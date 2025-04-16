@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Library.API.Database.Entities;
 using Library.API.Dtos.Books;
+using Library.API.Dtos.BookshelfA;
 
 namespace Library.API.Helpers
 {
@@ -11,6 +12,10 @@ namespace Library.API.Helpers
             CreateMap<LibraryEntity, BookDto>();
             CreateMap<LibraryEntity, BooksActionResponseDto>();
             CreateMap<BookCreateDto, LibraryEntity>();
+
+            CreateMap<BookshelfAEntity, BookshelfADto>();
+            CreateMap<BookshelfAEntity, BookshelfAActionResponseDto>();
+            CreateMap<BookshelfACreateDto, BookshelfAEntity>();
         }
     }
 }

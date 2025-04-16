@@ -11,5 +11,8 @@ namespace Library.API.Database
         }
         //Para la Tabla de los Libros
         public DbSet<LibraryEntity> Library { get; set; }
+
+        //Para la Tabla de Estanteria A
+        public DbSet<BookshelfAEntity> BookshelfA { get; set; }
     }
 }

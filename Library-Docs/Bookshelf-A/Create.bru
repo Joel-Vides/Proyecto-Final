@@ -1,0 +1,18 @@
+meta {
+  name: Create
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://localhost:7018/api/bookshelfa
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "bookId": "01996021-5147-44B5-99DA-D2411575E9FE",
+    "booksName": "Don Quijote de la Mancho"
+  }
+}

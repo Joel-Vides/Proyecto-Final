@@ -30,6 +30,6 @@ namespace Library.API.Dtos.Books
 
         [Display(Name = "Fecha_de_Publicacion")]
         [Required(ErrorMessage = "El Campo {0} es Requerido")]
-        public DateTime PublicationDate { get; set; }
+        public int PublicationYear { get; set; }
     }
 }
