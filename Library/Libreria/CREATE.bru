@@ -1,11 +1,11 @@
 meta {
-  name: EDIT
+  name: CREATE
   type: http
-  seq: 3
+  seq: 1
 }
 
-put {
-  url: https://localhost:7018/api/library/EB8BD9D0-EC66-4207-9F77-81B2288BA7AA
+post {
+  url: https://localhost:7018/api/library
   body: json
   auth: inherit
 }
@@ -17,6 +17,6 @@ body:json {
     "type": "Fabula",
     "volume": 1,
     "publisher": "Ideas Litográficas",
-    "publicationYear": 2010
+    "publicationYear": 1
   }
 }

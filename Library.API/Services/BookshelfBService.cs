@@ -2,6 +2,7 @@
 using Library.API.Constants;
 using Library.API.Database;
 using Library.API.Database.Entities;
+using Library.API.Dtos.BookshelfA;
 using Library.API.Dtos.BookshelfB;
 using Library.API.Dtos.Common;
 using Library.API.Services.Interfaces;
@@ -22,9 +23,22 @@ namespace Library.API.Services
 
         public async Task<ResponseDto<BookshelfBActionResponseDto>> CreateAsync(BookshelfBCreateDto dto)
         {
+            // Verificar la cantidad actual de libros en la estantería A
+            var booksCount = await _context.BookshelfB.CountAsync();
+            if (booksCount >= 50)
+            {
+                return new ResponseDto<BookshelfBActionResponseDto>
+                {
+                    StatusCode = HttpStatusCode.BAD_REQUEST,
+                    Status = false,
+                    Message = "La estantería A está llena (Máximo 50 registros)."
+                };
+            }
 
+            // Mapear el DTO a la entidad correspondiente
             var bookShelfEntity = _mapper.Map<BookshelfBEntity>(dto);
 
+            // Verificar si el libro existe en la base de datos de la biblioteca
             var libraryEntity = await _context.Library.FirstOrDefaultAsync(b => b.Id == dto.BookId);
 
             if (libraryEntity is null)
@@ -33,10 +47,11 @@ namespace Library.API.Services
                 {
                     StatusCode = HttpStatusCode.BAD_REQUEST,
                     Status = false,
-                    Message = "El Libro no Existe en la Base de Datos"
+                    Message = "El Libro no Existe en la Base de Datos."
                 };
             }
 
+            // Agregar el libro a la estantería A
             _context.BookshelfB.Add(bookShelfEntity);
             await _context.SaveChangesAsync();
 
@@ -44,7 +59,7 @@ namespace Library.API.Services
             {
                 StatusCode = HttpStatusCode.CREATED,
                 Status = true,
-                Message = "Registro Creado Correctamente",
+                Message = "Registro Creado Correctamente.",
                 Data = _mapper.Map<BookshelfBActionResponseDto>(bookShelfEntity)
             };
         }
