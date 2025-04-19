@@ -58,8 +58,7 @@
               "RelativeToolTip": "Library.API\\Dtos\\Books\\BooksActionResponseDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T17:53:41.246Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T17:53:41.246Z"
             },
             {
               "$type": "Document",
@@ -71,8 +70,7 @@
               "RelativeToolTip": "Library.API\\Dtos\\Books\\BookDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T17:53:36.435Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T17:53:36.435Z"
             },
             {
               "$type": "Document",
@@ -84,8 +82,7 @@
               "RelativeToolTip": "Library.API\\Controllers\\BookshelfAController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T16:50:01.151Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T16:50:01.151Z"
             },
             {
               "$type": "Document",
@@ -97,8 +94,7 @@
               "RelativeToolTip": "Library.API\\Services\\Interfaces\\IBookshelfAService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T16:15:31.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T16:15:31.114Z"
             },
             {
               "$type": "Document",
@@ -108,7 +104,7 @@
               "RelativeDocumentMoniker": "Library.API\\Services\\BookshelfAService.cs",
               "ToolTip": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Services\\BookshelfAService.cs",
               "RelativeToolTip": "Library.API\\Services\\BookshelfAService.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAzwBgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-16T16:15:03.367Z",
               "EditorCaption": ""
@@ -123,8 +119,7 @@
               "RelativeToolTip": "Library.API\\Database\\LibraryDBContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T16:06:16.476Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T16:06:16.476Z"
             },
             {
               "$type": "Document",
@@ -136,8 +131,7 @@
               "RelativeToolTip": "Library.API\\Database\\Entities\\LibraryEntity.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwCAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T15:41:18.493Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T15:41:18.493Z"
             },
             {
               "$type": "Document",
@@ -149,8 +143,7 @@
               "RelativeToolTip": "Library.API\\Database\\Entities\\BookshelfAEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T15:40:09.198Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T15:40:09.198Z"
             },
             {
               "$type": "Document",
@@ -162,8 +155,7 @@
               "RelativeToolTip": "Library.API\\Dtos\\Books\\BookCreateDto.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAQwCAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T02:34:03.099Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T02:34:03.099Z"
             }
           ]
         }
