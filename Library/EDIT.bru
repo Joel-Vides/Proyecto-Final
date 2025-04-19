@@ -1,0 +1,22 @@
+meta {
+  name: EDIT
+  type: http
+  seq: 3
+}
+
+put {
+  url: https://localhost:7018/api/library/EB8BD9D0-EC66-4207-9F77-81B2288BA7AA
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "bookName": "Si los perros pudieramos hablar",
+    "author": "Aida Castañeda",
+    "type": "Fabula",
+    "volume": 1,
+    "publisher": "Ideas Litográficas",
+    "publicationYear": 2010
+  }
+}

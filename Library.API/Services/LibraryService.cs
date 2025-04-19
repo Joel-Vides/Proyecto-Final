@@ -63,5 +63,37 @@ namespace Library.API.Services
                 Data = _mapper.Map<BooksActionResponseDto>(bookEntity)
             };
         }
+
+        //Para editar libros
+        public async Task<ResponseDto<BooksActionResponseDto>> EditAsync(Guid id, BookEditDto dto)
+        {
+            var bookEntity = await _context.Library.FirstOrDefaultAsync(x => x.Id == id);
+            if (bookEntity is null)
+            {
+                return new ResponseDto<BooksActionResponseDto>
+                {
+                    StatusCode = HttpStatusCode.NOT_FOUND,
+                    Status = false,
+                    Message = "Registro no Encontrado!"
+                };
+            }
+
+            bookEntity.BookName = dto.BookName;
+            bookEntity.Author = dto.Author;
+            bookEntity.Type = dto.Type;
+            bookEntity.Volume = dto.Volume;
+            bookEntity.Publisher = dto.Publisher;
+            bookEntity.PublicationYear = dto.PublicationYear;
+
+            await _context.SaveChangesAsync();
+
+            return new ResponseDto<BooksActionResponseDto>
+            {
+                StatusCode = HttpStatusCode.OK,
+                Status = true,
+                Message = "Registro Actualizado Correctamente",
+                Data = _mapper.Map<BooksActionResponseDto>(bookEntity)
+            };
+        }
     }
 }

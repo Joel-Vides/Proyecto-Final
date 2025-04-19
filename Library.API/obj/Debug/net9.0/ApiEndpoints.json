@@ -52,6 +52,110 @@
     ]
   },
   {
+    "ContainingType": "Library.API.Controllers.BookshelfBController",
+    "Method": "Post",
+    "RelativePath": "api/bookshelfb",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Library.API.Dtos.BookshelfB.BookshelfBCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Library.API.Dtos.Common.ResponseDto\u00601[[Library.API.Dtos.BookshelfB.BookshelfBActionResponseDto, Library.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Library.API.Controllers.BookshelfBController",
+    "Method": "Delete",
+    "RelativePath": "api/bookshelfb/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Library.API.Dtos.Common.ResponseDto\u00601[[Library.API.Dtos.BookshelfB.BookshelfBActionResponseDto, Library.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Library.API.Controllers.BookshelfCController",
+    "Method": "Post",
+    "RelativePath": "api/bookshelfc",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Library.API.Dtos.BookshelfC.BookshelfCCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Library.API.Dtos.Common.ResponseDto\u00601[[Library.API.Dtos.BookshelfC.BookshelfCActionResponseDto, Library.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Library.API.Controllers.BookshelfCController",
+    "Method": "Delete",
+    "RelativePath": "api/bookshelfc/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Library.API.Dtos.Common.ResponseDto\u00601[[Library.API.Dtos.BookshelfC.BookshelfCActionResponseDto, Library.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "Library.API.Controllers.LibraryController",
     "Method": "Post",
     "RelativePath": "api/library",
@@ -85,6 +189,37 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Library.API.Dtos.Common.ResponseDto\u00601[[Library.API.Dtos.Books.BooksActionResponseDto, Library.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Library.API.Controllers.LibraryController",
+    "Method": "Edit",
+    "RelativePath": "api/library/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Library.API.Dtos.Books.BookEditDto",
+        "IsRequired": true
+      },
       {
         "Name": "id",
         "Type": "System.Guid",
