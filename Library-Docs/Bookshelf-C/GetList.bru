@@ -1,0 +1,16 @@
+meta {
+  name: GetList
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://localhost:7018/api/bookshelfc?page=1&pageSize=2
+  body: none
+  auth: inherit
+}
+
+params:query {
+  page: 1
+  pageSize: 2
+}

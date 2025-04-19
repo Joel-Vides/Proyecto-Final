@@ -1,4 +1,5 @@
-﻿using Library.API.Dtos.BookshelfC;
+﻿using Library.API.Dtos.BookshelfA;
+using Library.API.Dtos.BookshelfC;
 using Library.API.Dtos.Common;
 using Library.API.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
@@ -14,6 +15,20 @@ namespace Library.API.Controllers
         public BookshelfCController(IBookshelfCService bookshelfCService)
         {
             _bookshelfCService = bookshelfCService;
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<ResponseDto<List<BookshelfCCreateDto>>>> GetList(
+            int page = 1, int pageSize = 0)
+        {
+            var response = await _bookshelfCService.GetListAsync(page, pageSize);
+
+            return StatusCode(response.StatusCode, new
+            {
+                response.Status,
+                response.Message,
+                response.Data
+            });
         }
 
         [HttpPost]

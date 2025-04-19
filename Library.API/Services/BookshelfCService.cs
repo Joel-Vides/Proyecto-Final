@@ -2,6 +2,7 @@
 using Library.API.Constants;
 using Library.API.Database;
 using Library.API.Database.Entities;
+using Library.API.Database.Entities.Common;
 using Library.API.Dtos.BookshelfA;
 using Library.API.Dtos.BookshelfC;
 using Library.API.Dtos.Common;
@@ -15,10 +16,59 @@ namespace Library.API.Services
         private readonly LibraryDBContext _context;
         private readonly IMapper _mapper;
 
-        public BookshelfCService(LibraryDBContext context, IMapper mapper)
+        // Para la Pagination
+        private readonly int PAGE_SIZE;
+        private readonly int PAGE_SIZE_LIMIT;
+
+        public BookshelfCService(LibraryDBContext context, IMapper mapper, IConfiguration configuration)
         {
             _context = context;
             _mapper = mapper;
+
+            // Para La Pagination
+            PAGE_SIZE = configuration.GetValue<int>("PageSize");
+            PAGE_SIZE_LIMIT = configuration.GetValue<int>("PageSizeLimit");
+        }
+
+        public async Task<ResponseDto<PaginationDto<List<BookshelfCDto>>>> GetListAsync(
+            int page = 1, int pageSize = 0)
+        {
+            pageSize = pageSize == 0 ? PAGE_SIZE : pageSize;
+
+            int startIndex = (page - 1) * pageSize;
+
+            IQueryable<BookshelfCEntity> bookshelfCQuery = _context.BookshelfC;
+
+            int totalRows = await bookshelfCQuery.CountAsync();
+
+            var bookshelfCEntity = await bookshelfCQuery
+                .OrderBy(x => x.BooksName)
+                .Skip(startIndex)
+                .Take(pageSize)
+                .ToListAsync();
+
+            var bookshelfCDto = _mapper.Map<List<BookshelfCDto>>(bookshelfCEntity);
+
+            return new ResponseDto<PaginationDto<List<BookshelfCDto>>>
+            {
+                StatusCode = HttpStatusCode.OK,
+                Status = true,
+                Message = bookshelfCEntity.Count() > 0
+                    ? "Registros Encontrados"
+                    : "No se Encontraron Registros",
+                Data = new PaginationDto<List<BookshelfCDto>>
+                {
+                    CurrentPage = page,
+                    PageSize = pageSize,
+                    TotalItems = totalRows,
+                    TotalPages = (int)Math.Ceiling((double)totalRows / pageSize),
+                    Items = bookshelfCDto,
+                    HasNextPage = startIndex + pageSize < PAGE_SIZE_LIMIT && page < (int)Math
+                        .Ceiling((double)totalRows / pageSize),
+                    HasPreviousPage = page > 1
+                }
+            };
+
         }
 
         public async Task<ResponseDto<BookshelfCActionResponseDto>> CreateAsync(BookshelfCCreateDto dto)
