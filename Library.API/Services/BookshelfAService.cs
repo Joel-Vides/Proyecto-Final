@@ -22,9 +22,22 @@ namespace Library.API.Services
 
         public async Task<ResponseDto<BookshelfAActionResponseDto>> CreateAsync(BookshelfACreateDto dto)
         {
+            // Verificar la cantidad actual de libros en la estantería A
+            var booksCount = await _context.BookshelfA.CountAsync();
+            if (booksCount >= 50)
+            {
+                return new ResponseDto<BookshelfAActionResponseDto>
+                {
+                    StatusCode = HttpStatusCode.BAD_REQUEST,
+                    Status = false,
+                    Message = "La estantería A está llena (Máximo 50 registros)."
+                };
+            }
 
+            // Mapear el DTO a la entidad correspondiente
             var bookShelfEntity = _mapper.Map<BookshelfAEntity>(dto);
 
+            // Verificar si el libro existe en la base de datos de la biblioteca
             var libraryEntity = await _context.Library.FirstOrDefaultAsync(b => b.Id == dto.BookId);
 
             if (libraryEntity is null)
@@ -33,10 +46,11 @@ namespace Library.API.Services
                 {
                     StatusCode = HttpStatusCode.BAD_REQUEST,
                     Status = false,
-                    Message = "El Libro no Existe en la Base de Datos"
+                    Message = "El Libro no Existe en la Base de Datos."
                 };
             }
 
+            // Agregar el libro a la estantería A
             _context.BookshelfA.Add(bookShelfEntity);
             await _context.SaveChangesAsync();
 
@@ -44,7 +58,7 @@ namespace Library.API.Services
             {
                 StatusCode = HttpStatusCode.CREATED,
                 Status = true,
-                Message = "Registro Creado Correctamente",
+                Message = "Registro Creado Correctamente.",
                 Data = _mapper.Map<BookshelfAActionResponseDto>(bookShelfEntity)
             };
         }
