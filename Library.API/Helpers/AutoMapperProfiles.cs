@@ -2,6 +2,8 @@
 using Library.API.Database.Entities;
 using Library.API.Dtos.Books;
 using Library.API.Dtos.BookshelfA;
+using Library.API.Dtos.BookshelfB;
+using Library.API.Dtos.BookshelfC;
 
 namespace Library.API.Helpers
 {
@@ -16,6 +18,14 @@ namespace Library.API.Helpers
             CreateMap<BookshelfAEntity, BookshelfADto>();
             CreateMap<BookshelfAEntity, BookshelfAActionResponseDto>();
             CreateMap<BookshelfACreateDto, BookshelfAEntity>();
+
+            CreateMap<BookshelfBEntity, BookshelfBDto>();
+            CreateMap<BookshelfBEntity, BookshelfBActionResponseDto>();
+            CreateMap<BookshelfBCreateDto, BookshelfBEntity>();
+
+            CreateMap<BookshelfCEntity, BookshelfCDto>();
+            CreateMap<BookshelfCEntity, BookshelfCActionResponseDto>();
+            CreateMap<BookshelfCCreateDto, BookshelfCEntity>();
         }
     }
 }

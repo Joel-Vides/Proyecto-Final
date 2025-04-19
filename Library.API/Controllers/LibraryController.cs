@@ -36,5 +36,14 @@ namespace Library.API.Controllers
 
             return StatusCode(response.StatusCode, response);
         }
+
+        [HttpPut("{id}")]
+        public async Task<ActionResult<ResponseDto<BooksActionResponseDto>>> Edit([FromBody] BookEditDto dto, Guid id)
+        {
+            var response = await _libraryService.EditAsync(id, dto);
+
+            return StatusCode(response.StatusCode, response);
+        }
+
     }
 }

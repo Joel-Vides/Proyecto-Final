@@ -21,6 +21,10 @@ builder.Services.AddTransient<ILibraryService, LibraryService>();
 
 builder.Services.AddTransient<IBookshelfAService, BookshelfAService>();
 
+builder.Services.AddTransient<IBookshelfBService, BookshelfBService>();
+
+builder.Services.AddTransient<IBookshelfCService, BookshelfCService>();
+
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
