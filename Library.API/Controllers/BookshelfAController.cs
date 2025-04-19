@@ -16,6 +16,20 @@ namespace Library.API.Controllers
             _bookshelfAService = bookshelfAService;
         }
 
+        [HttpGet]
+        public async Task<ActionResult<ResponseDto<List<BookshelfACreateDto>>>> GetList(
+            int page = 1, int pageSize = 0)
+        {
+            var response = await _bookshelfAService.GetListAsync(page, pageSize);
+
+            return StatusCode(response.StatusCode, new
+            {
+                response.Status,
+                response.Message,
+                response.Data
+            });
+        }
+
         [HttpPost]
         public async Task<ActionResult<ResponseDto<BookshelfAActionResponseDto>>> Post([FromBody] BookshelfACreateDto dto)
         {
