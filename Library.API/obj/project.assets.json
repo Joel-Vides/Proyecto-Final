@@ -3241,23 +3241,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\joelv\\.nuget\\packages\\": {},
+    "C:\\Users\\difer\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Library.API.csproj",
+      "projectUniqueName": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\Library.API\\Library.API.csproj",
       "projectName": "Library.API",
-      "projectPath": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Library.API.csproj",
-      "packagesPath": "C:\\Users\\joelv\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\obj\\",
+      "projectPath": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\Library.API\\Library.API.csproj",
+      "packagesPath": "C:\\Users\\difer\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\Library.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\joelv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\difer\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

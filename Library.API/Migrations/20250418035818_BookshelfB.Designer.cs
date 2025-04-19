@@ -3,6 +3,7 @@ using System;
 using Library.API.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Library.API.Migrations
 {
     [DbContext(typeof(LibraryDBContext))]
-    partial class LibraryDBContextModelSnapshot : ModelSnapshot
+    [Migration("20250418035818_BookshelfB")]
+    partial class BookshelfB
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.3");
@@ -93,44 +96,6 @@ namespace Library.API.Migrations
                     b.ToTable("Bookshelf_B");
                 });
 
-            modelBuilder.Entity("Library.API.Database.Entities.BookshelfCEntity", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("TEXT")
-                        .HasColumnName("id");
-
-                    b.Property<Guid?>("BookId")
-                        .HasColumnType("TEXT")
-                        .HasColumnName("book_id");
-
-                    b.Property<string>("BooksName")
-                        .HasColumnType("TEXT")
-                        .HasColumnName("book_name");
-
-                    b.Property<string>("CreatedBy")
-                        .HasColumnType("TEXT")
-                        .HasColumnName("created_by");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("TEXT")
-                        .HasColumnName("created_date");
-
-                    b.Property<string>("UpdatedBy")
-                        .HasColumnType("TEXT")
-                        .HasColumnName("updated_by");
-
-                    b.Property<DateTime>("UpdatedDate")
-                        .HasColumnType("TEXT")
-                        .HasColumnName("updated_date");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("BookId");
-
-                    b.ToTable("Bookshelf_c");
-                });
-
             modelBuilder.Entity("Library.API.Database.Entities.LibraryEntity", b =>
                 {
                     b.Property<Guid>("Id")
@@ -203,15 +168,6 @@ namespace Library.API.Migrations
                         .HasForeignKey("BookId");
 
                     b.Navigation("BookshelfB");
-                });
-
-            modelBuilder.Entity("Library.API.Database.Entities.BookshelfCEntity", b =>
-                {
-                    b.HasOne("Library.API.Database.Entities.LibraryEntity", "BookshelfC")
-                        .WithMany()
-                        .HasForeignKey("BookId");
-
-                    b.Navigation("BookshelfC");
                 });
 #pragma warning restore 612, 618
         }
