@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|c:\\users\\difer\\desktop\\proyecto\\unidad i\\practicas\\practica\\proyecto-final\\library.api\\controllers\\bookshelfccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|solutionrelative:library.api\\controllers\\bookshelfccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|c:\\users\\difer\\desktop\\proyecto\\unidad i\\practicas\\practica\\proyecto-final\\library.api\\services\\bookshelfcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|solutionrelative:library.api\\services\\bookshelfcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -73,10 +77,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|c:\\users\\difer\\desktop\\proyecto\\unidad i\\practicas\\practica\\proyecto-final\\library.api\\database\\entities\\bookshelfcentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|solutionrelative:library.api\\database\\entities\\bookshelfcentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|c:\\users\\difer\\desktop\\proyecto\\unidad i\\practicas\\practica\\proyecto-final\\library.api\\controllers\\bookshelfccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|solutionrelative:library.api\\controllers\\bookshelfccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|c:\\users\\difer\\desktop\\proyecto\\unidad i\\practicas\\practica\\proyecto-final\\library.api\\migrations\\20250419034627_bookshelfc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -166,7 +166,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -174,31 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "LibraryEntity.cs",
-              "DocumentMoniker": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\Library.API\\Database\\Entities\\LibraryEntity.cs",
-              "RelativeDocumentMoniker": "Library.API\\Database\\Entities\\LibraryEntity.cs",
-              "ToolTip": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\Library.API\\Database\\Entities\\LibraryEntity.cs",
-              "RelativeToolTip": "Library.API\\Database\\Entities\\LibraryEntity.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T01:57:56.627Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "BookEditDto.cs",
-              "DocumentMoniker": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\Library.API\\Dtos\\Books\\BookEditDto.cs",
-              "RelativeDocumentMoniker": "Library.API\\Dtos\\Books\\BookEditDto.cs",
-              "ToolTip": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\Library.API\\Dtos\\Books\\BookEditDto.cs",
-              "RelativeToolTip": "Library.API\\Dtos\\Books\\BookEditDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T17:02:41.453Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ResponseDto.cs",
               "DocumentMoniker": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\Library.API\\Dtos\\Common\\ResponseDto.cs",
               "RelativeDocumentMoniker": "Library.API\\Dtos\\Common\\ResponseDto.cs",
@@ -206,11 +182,12 @@
               "RelativeToolTip": "Library.API\\Dtos\\Common\\ResponseDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T02:34:49.324Z"
+              "WhenOpened": "2025-04-17T02:34:49.324Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "BooksActionResponseDto.cs",
               "DocumentMoniker": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\Library.API\\Dtos\\Books\\BooksActionResponseDto.cs",
               "RelativeDocumentMoniker": "Library.API\\Dtos\\Books\\BooksActionResponseDto.cs",
@@ -218,11 +195,12 @@
               "RelativeToolTip": "Library.API\\Dtos\\Books\\BooksActionResponseDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T02:32:37.319Z"
+              "WhenOpened": "2025-04-17T02:32:37.319Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\Library.API\\Program.cs",
               "RelativeDocumentMoniker": "Library.API\\Program.cs",
@@ -235,7 +213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "BookshelfAController.cs",
               "DocumentMoniker": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\Library.API\\Controllers\\BookshelfAController.cs",
               "RelativeDocumentMoniker": "Library.API\\Controllers\\BookshelfAController.cs",
@@ -248,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "BookshelfAService.cs",
               "DocumentMoniker": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\Library.API\\Services\\BookshelfAService.cs",
               "RelativeDocumentMoniker": "Library.API\\Services\\BookshelfAService.cs",
@@ -261,33 +239,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "BookshelfBService.cs",
               "DocumentMoniker": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\Library.API\\Services\\BookshelfBService.cs",
               "RelativeDocumentMoniker": "Library.API\\Services\\BookshelfBService.cs",
               "ToolTip": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\Library.API\\Services\\BookshelfBService.cs",
               "RelativeToolTip": "Library.API\\Services\\BookshelfBService.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAwwDMAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAwwDMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-17T04:06:32.894Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "BookshelfCService.cs",
               "DocumentMoniker": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\Library.API\\Services\\BookshelfCService.cs",
               "RelativeDocumentMoniker": "Library.API\\Services\\BookshelfCService.cs",
               "ToolTip": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\Library.API\\Services\\BookshelfCService.cs",
               "RelativeToolTip": "Library.API\\Services\\BookshelfCService.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAwwCcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-18T04:32:46.102Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "BookshelfCController.cs",
+              "DocumentMoniker": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\Library.API\\Controllers\\BookshelfCController.cs",
+              "RelativeDocumentMoniker": "Library.API\\Controllers\\BookshelfCController.cs",
+              "ToolTip": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\Library.API\\Controllers\\BookshelfCController.cs",
+              "RelativeToolTip": "Library.API\\Controllers\\BookshelfCController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwDUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T04:21:55.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BookEditDto.cs",
+              "DocumentMoniker": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\Library.API\\Dtos\\Books\\BookEditDto.cs",
+              "RelativeDocumentMoniker": "Library.API\\Dtos\\Books\\BookEditDto.cs",
+              "ToolTip": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\Library.API\\Dtos\\Books\\BookEditDto.cs",
+              "RelativeToolTip": "Library.API\\Dtos\\Books\\BookEditDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T17:02:41.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LibraryEntity.cs",
+              "DocumentMoniker": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\Library.API\\Database\\Entities\\LibraryEntity.cs",
+              "RelativeDocumentMoniker": "Library.API\\Database\\Entities\\LibraryEntity.cs",
+              "ToolTip": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\Library.API\\Database\\Entities\\LibraryEntity.cs",
+              "RelativeToolTip": "Library.API\\Database\\Entities\\LibraryEntity.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwA8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T01:57:56.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "LibraryController.cs",
               "DocumentMoniker": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\Library.API\\Controllers\\LibraryController.cs",
               "RelativeDocumentMoniker": "Library.API\\Controllers\\LibraryController.cs",
@@ -300,7 +317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "IBookshelfCService.cs",
               "DocumentMoniker": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\Library.API\\Services\\Interfaces\\IBookshelfCService.cs",
               "RelativeDocumentMoniker": "Library.API\\Services\\Interfaces\\IBookshelfCService.cs",
@@ -308,11 +325,12 @@
               "RelativeToolTip": "Library.API\\Services\\Interfaces\\IBookshelfCService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T04:33:11.713Z"
+              "WhenOpened": "2025-04-18T04:33:11.713Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ILibraryService.cs",
               "DocumentMoniker": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\Library.API\\Services\\Interfaces\\ILibraryService.cs",
               "RelativeDocumentMoniker": "Library.API\\Services\\Interfaces\\ILibraryService.cs",
@@ -320,11 +338,12 @@
               "RelativeToolTip": "Library.API\\Services\\Interfaces\\ILibraryService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T02:37:12.682Z"
+              "WhenOpened": "2025-04-17T02:37:12.682Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "LibraryService.cs",
               "DocumentMoniker": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\Library.API\\Services\\LibraryService.cs",
               "RelativeDocumentMoniker": "Library.API\\Services\\LibraryService.cs",
@@ -332,11 +351,12 @@
               "RelativeToolTip": "Library.API\\Services\\LibraryService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T01:57:04.726Z"
+              "WhenOpened": "2025-04-17T01:57:04.726Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "BookshelfAActionResponseDto.cs",
               "DocumentMoniker": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\Library.API\\Dtos\\BookshelfA\\BookshelfAActionResponseDto.cs",
               "RelativeDocumentMoniker": "Library.API\\Dtos\\BookshelfA\\BookshelfAActionResponseDto.cs",
@@ -344,7 +364,8 @@
               "RelativeToolTip": "Library.API\\Dtos\\BookshelfA\\BookshelfAActionResponseDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T02:33:04.948Z"
+              "WhenOpened": "2025-04-17T02:33:04.948Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -356,7 +377,8 @@
               "RelativeToolTip": "Library.API\\Database\\Entities\\BookshelfBEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T03:48:22.424Z"
+              "WhenOpened": "2025-04-17T03:48:22.424Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -368,11 +390,12 @@
               "RelativeToolTip": "Library.API\\Migrations\\20250419034627_bookshelfC.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T03:46:27.403Z"
+              "WhenOpened": "2025-04-19T03:46:27.403Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "BookshlefCCreateDto.cs",
               "DocumentMoniker": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\Library.API\\Dtos\\BookshelfC\\BookshlefCCreateDto.cs",
               "RelativeDocumentMoniker": "Library.API\\Dtos\\BookshelfC\\BookshlefCCreateDto.cs",
@@ -380,11 +403,12 @@
               "RelativeToolTip": "Library.API\\Dtos\\BookshelfC\\BookshlefCCreateDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T04:31:55.289Z"
+              "WhenOpened": "2025-04-18T04:31:55.289Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "BookshelfCDto.cs",
               "DocumentMoniker": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\Library.API\\Dtos\\BookshelfC\\BookshelfCDto.cs",
               "RelativeDocumentMoniker": "Library.API\\Dtos\\BookshelfC\\BookshelfCDto.cs",
@@ -392,11 +416,12 @@
               "RelativeToolTip": "Library.API\\Dtos\\BookshelfC\\BookshelfCDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T04:32:16.799Z"
+              "WhenOpened": "2025-04-18T04:32:16.799Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "BookshelfCActionResponseDto.cs",
               "DocumentMoniker": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\Library.API\\Dtos\\BookshelfC\\BookshelfCActionResponseDto.cs",
               "RelativeDocumentMoniker": "Library.API\\Dtos\\BookshelfC\\BookshelfCActionResponseDto.cs",
@@ -404,23 +429,12 @@
               "RelativeToolTip": "Library.API\\Dtos\\BookshelfC\\BookshelfCActionResponseDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T04:31:24.427Z"
+              "WhenOpened": "2025-04-18T04:31:24.427Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "BookshelfCController.cs",
-              "DocumentMoniker": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\Library.API\\Controllers\\BookshelfCController.cs",
-              "RelativeDocumentMoniker": "Library.API\\Controllers\\BookshelfCController.cs",
-              "ToolTip": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\Library.API\\Controllers\\BookshelfCController.cs",
-              "RelativeToolTip": "Library.API\\Controllers\\BookshelfCController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwCcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T04:21:55.605Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
               "Title": "BookshelfCEntity.cs",
               "DocumentMoniker": "C:\\Users\\difer\\Desktop\\Proyecto\\Unidad I\\PRACTICAS\\Practica\\Proyecto-Final\\Library.API\\Database\\Entities\\BookshelfCEntity.cs",
               "RelativeDocumentMoniker": "Library.API\\Database\\Entities\\BookshelfCEntity.cs",
@@ -428,7 +442,8 @@
               "RelativeToolTip": "Library.API\\Database\\Entities\\BookshelfCEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T04:24:15.534Z"
+              "WhenOpened": "2025-04-18T04:24:15.534Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -440,7 +455,8 @@
               "RelativeToolTip": "Library.API\\Dtos\\Books\\BookCreateDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T02:34:03.099Z"
+              "WhenOpened": "2025-04-06T02:34:03.099Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -452,7 +468,8 @@
               "RelativeToolTip": "Library.API\\Database\\LibraryDBContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T03:15:25.073Z"
+              "WhenOpened": "2025-04-06T03:15:25.073Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -464,7 +481,8 @@
               "RelativeToolTip": "Library.API\\Migrations\\20250406031355_database.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T03:43:48.085Z"
+              "WhenOpened": "2025-04-19T03:43:48.085Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -476,7 +494,8 @@
               "RelativeToolTip": "Library.API\\Migrations\\20250406031355_database.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T03:13:55.817Z"
+              "WhenOpened": "2025-04-06T03:13:55.817Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -488,7 +507,8 @@
               "RelativeToolTip": "Library.API\\Dtos\\BookshelfB\\BookshelfBDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T04:05:18.024Z"
+              "WhenOpened": "2025-04-17T04:05:18.024Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -500,7 +520,8 @@
               "RelativeToolTip": "Library.API\\Dtos\\BookshelfB\\BookshelfBCreateDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T04:05:02.283Z"
+              "WhenOpened": "2025-04-17T04:05:02.283Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -512,7 +533,8 @@
               "RelativeToolTip": "Library.API\\Database\\Entities\\BookshelfAEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T01:57:47.225Z"
+              "WhenOpened": "2025-04-17T01:57:47.225Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -524,7 +546,8 @@
               "RelativeToolTip": "Library.API\\Helpers\\AutoMapperProfiles.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAgwAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T02:49:52.464Z"
+              "WhenOpened": "2025-04-06T02:49:52.464Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -536,7 +559,8 @@
               "RelativeToolTip": "Library.API\\Controllers\\BookshelfBController.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAgwAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T04:25:06.945Z"
+              "WhenOpened": "2025-04-17T04:25:06.945Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -548,7 +572,8 @@
               "RelativeToolTip": "Library.API\\Dtos\\BookshelfA\\BookshelfADto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T02:34:20.509Z"
+              "WhenOpened": "2025-04-17T02:34:20.509Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -560,7 +585,8 @@
               "RelativeToolTip": "Library.API\\Dtos\\BookshelfA\\BookshelfACreateDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T02:34:05.785Z"
+              "WhenOpened": "2025-04-17T02:34:05.785Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -572,7 +598,8 @@
               "RelativeToolTip": "Library.API\\Dtos\\BookshelfB\\BookshelfBActionResponseDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T04:04:46.575Z"
+              "WhenOpened": "2025-04-17T04:04:46.575Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -584,7 +611,8 @@
               "RelativeToolTip": "Library.API\\Services\\Interfaces\\IBookshelfAService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T01:57:16.453Z"
+              "WhenOpened": "2025-04-17T01:57:16.453Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -596,7 +624,8 @@
               "RelativeToolTip": "Library.API\\Database\\Entities\\Common\\BaseEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T01:57:48.885Z"
+              "WhenOpened": "2025-04-17T01:57:48.885Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -608,7 +637,8 @@
               "RelativeToolTip": "Library.API\\Services\\Interfaces\\IBookshelfBService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T04:10:09.757Z"
+              "WhenOpened": "2025-04-17T04:10:09.757Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -620,7 +650,8 @@
               "RelativeToolTip": "Library.API\\Dtos\\Books\\BookDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T02:32:17.705Z"
+              "WhenOpened": "2025-04-17T02:32:17.705Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -632,7 +663,8 @@
               "RelativeToolTip": "Library.API\\Constants\\HttpStatusCode.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T03:36:26.55Z"
+              "WhenOpened": "2025-04-06T03:36:26.55Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -644,7 +676,8 @@
               "RelativeToolTip": "Library.API\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-17T02:05:44.763Z"
+              "WhenOpened": "2025-04-17T02:05:44.763Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -2,6 +2,7 @@
 using Library.API.Constants;
 using Library.API.Database;
 using Library.API.Database.Entities;
+using Library.API.Database.Entities.Common;
 using Library.API.Dtos.BookshelfA;
 using Library.API.Dtos.Common;
 using Library.API.Services.Interfaces;
@@ -14,11 +15,59 @@ namespace Library.API.Services
         private readonly LibraryDBContext _context;
         private readonly IMapper _mapper;
 
-        public BookshelfAService(LibraryDBContext context, IMapper mapper)
+        // Para la Pagination
+        private readonly int PAGE_SIZE;
+        private readonly int PAGE_SIZE_LIMIT;
+
+        public BookshelfAService(LibraryDBContext context, IMapper mapper, IConfiguration configuration)
         {
             _context = context;
             _mapper = mapper;
+
+            // Para La Pagination
+            PAGE_SIZE = configuration.GetValue<int>("PageSize");
+            PAGE_SIZE_LIMIT = configuration.GetValue<int>("PageSizeLimit");
         }
+        public async Task<ResponseDto<PaginationDto<List<BookshelfADto>>>> GetListAsync(
+            int page = 1, int pageSize = 0)
+        {
+            pageSize = pageSize == 0 ? PAGE_SIZE : pageSize;
+
+            int startIndex = (page - 1) * pageSize;
+
+            IQueryable<BookshelfAEntity> bookshelfAQuery = _context.BookshelfA;
+
+            int totalRows = await bookshelfAQuery.CountAsync();
+
+            var bookshelfAEntity = await bookshelfAQuery
+                .OrderBy(x => x.BooksName)
+                .Skip(startIndex)
+                .Take(pageSize)
+                .ToListAsync();
+
+            var bookshelfADto = _mapper.Map<List<BookshelfADto>>(bookshelfAEntity);
+
+            return new ResponseDto<PaginationDto<List<BookshelfADto>>>
+            {
+                StatusCode = HttpStatusCode.OK,
+                Status = true,
+                Message = bookshelfAEntity.Count() > 0
+                    ? "Registros Encontrados"
+                    : "No se Encontraron Registros",
+                Data = new PaginationDto<List<BookshelfADto>>
+                {
+                    CurrentPage = page,
+                    PageSize = pageSize,
+                    TotalItems = totalRows,
+                    TotalPages = (int)Math.Ceiling((double)totalRows / pageSize),
+                    Items = bookshelfADto,
+                    HasNextPage = startIndex + pageSize < PAGE_SIZE_LIMIT && page < (int)Math
+                        .Ceiling((double)totalRows / pageSize),
+                    HasPreviousPage = page > 1
+                }
+            };
+
+        } 
 
         public async Task<ResponseDto<BookshelfAActionResponseDto>> CreateAsync(BookshelfACreateDto dto)
         {
@@ -62,6 +111,7 @@ namespace Library.API.Services
                 Data = _mapper.Map<BookshelfAActionResponseDto>(bookShelfEntity)
             };
         }
+
 
         public async Task<ResponseDto<BookshelfAActionResponseDto>> DeleteAsync(Guid id)
         {

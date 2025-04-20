@@ -1,0 +1,18 @@
+meta {
+  name: Create
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://localhost:7018/api/bookshelfc
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "bookId": "F2E30B1D-8D29-4C31-B370-41D25A847A85",
+    "booksName": "El Señor de los Anillos"
+  }
+}

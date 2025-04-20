@@ -1,0 +1,18 @@
+meta {
+  name: Create
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://localhost:7018/api/bookshelfb
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "bookId": "01513961-05D5-449D-A026-48422DFB6C7E",
+    "booksName": "Harry Potter y la Piedra Filosofal"
+  }
+}
