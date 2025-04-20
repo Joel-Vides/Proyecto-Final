@@ -45,5 +45,12 @@ namespace Library.API.Controllers
             return StatusCode(response.StatusCode, response);
         }
 
+        [HttpGet("location/{bookId}")]
+        public async Task<ActionResult<ResponseDto<string>>> GetBookLocation(Guid bookId)
+        {
+            var response = await _libraryService.GetBookLocationAsync(bookId);
+            return StatusCode(response.StatusCode, response);
+        }
+
     }
 }
