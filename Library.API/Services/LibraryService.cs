@@ -95,5 +95,49 @@ namespace Library.API.Services
                 Data = _mapper.Map<BooksActionResponseDto>(bookEntity)
             };
         }
+
+        //Funcion para buscar libros
+        public async Task<ResponseDto<string>> GetBookLocationAsync(Guid bookId)
+        {
+            // Buscar el libro en la tabla principal
+            var book = await _context.Library.FirstOrDefaultAsync(b => b.Id == bookId);
+            if (book == null)
+            {
+                return new ResponseDto<string>
+                {
+                    StatusCode = HttpStatusCode.NOT_FOUND,
+                    Status = false,
+                    Message = "Libro no encontrado en la base de datos."
+                };
+            }
+
+            // Verificar en qué estantería está
+            string bookshelf = null;
+            if (await _context.BookshelfA.AnyAsync(a => a.BookId == bookId))
+                bookshelf = "A";
+            else if (await _context.BookshelfB.AnyAsync(b => b.BookId == bookId))
+                bookshelf = "B";
+            else if (await _context.BookshelfC.AnyAsync(c => c.BookId == bookId))
+                bookshelf = "C";
+
+            if (bookshelf == null)
+            {
+                return new ResponseDto<string>
+                {
+                    StatusCode = HttpStatusCode.NOT_FOUND,
+                    Status = false,
+                    Message = "El libro no está asignado a ninguna estantería."
+                };
+            }
+
+            // Mensaje exacto solicitado
+            return new ResponseDto<string>
+            {
+                StatusCode = HttpStatusCode.OK,
+                Status = true,
+                Message = $"El libro '{book.BookName}' se encuentra en la estantería {bookshelf} y su ID es {bookId}.",
+                Data = bookshelf // Opcional: enviar la estantería como dato adicional
+            };
+        }
     }
 }
