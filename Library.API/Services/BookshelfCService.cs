@@ -31,13 +31,20 @@ namespace Library.API.Services
         }
 
         public async Task<ResponseDto<PaginationDto<List<BookshelfCDto>>>> GetListAsync(
-            int page = 1, int pageSize = 0)
+            string searchTerm = "", int page = 1, int pageSize = 0)
         {
             pageSize = pageSize == 0 ? PAGE_SIZE : pageSize;
 
             int startIndex = (page - 1) * pageSize;
 
             IQueryable<BookshelfCEntity> bookshelfCQuery = _context.BookshelfC;
+
+            if (!string.IsNullOrEmpty(searchTerm))
+            {
+                bookshelfCQuery = bookshelfCQuery
+                    .Where(x => (x.BooksName)
+                    .Contains(searchTerm));
+            }
 
             int totalRows = await bookshelfCQuery.CountAsync();
 

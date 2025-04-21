@@ -5,12 +5,13 @@ meta {
 }
 
 get {
-  url: https://localhost:7018/api/bookshelfa?page=1&pageSize=1
+  url: https://localhost:7018/api/bookshelfa?page=1&pageSize=5&searchTerm
   body: none
   auth: inherit
 }
 
 params:query {
   page: 1
-  pageSize: 1
+  pageSize: 5
+  searchTerm: 
 }

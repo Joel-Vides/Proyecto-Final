@@ -29,13 +29,20 @@ namespace Library.API.Services
             PAGE_SIZE_LIMIT = configuration.GetValue<int>("PageSizeLimit");
         }
         public async Task<ResponseDto<PaginationDto<List<BookshelfADto>>>> GetListAsync(
-            int page = 1, int pageSize = 0)
+            string searchTerm = "" ,int page = 1, int pageSize = 0)
         {
             pageSize = pageSize == 0 ? PAGE_SIZE : pageSize;
 
             int startIndex = (page - 1) * pageSize;
 
             IQueryable<BookshelfAEntity> bookshelfAQuery = _context.BookshelfA;
+
+            if (!string.IsNullOrEmpty(searchTerm))
+            {
+                bookshelfAQuery = bookshelfAQuery
+                    .Where(x => (x.BooksName)
+                    .Contains(searchTerm));
+            }
 
             int totalRows = await bookshelfAQuery.CountAsync();
 

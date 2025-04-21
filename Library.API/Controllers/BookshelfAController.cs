@@ -18,9 +18,9 @@ namespace Library.API.Controllers
 
         [HttpGet]
         public async Task<ActionResult<ResponseDto<List<BookshelfACreateDto>>>> GetList(
-            int page = 1, int pageSize = 0)
+            string searchTerm = "", int page = 1, int pageSize = 0)
         {
-            var response = await _bookshelfAService.GetListAsync(page, pageSize);
+            var response = await _bookshelfAService.GetListAsync(searchTerm, page, pageSize);
 
             return StatusCode(response.StatusCode, new
             {

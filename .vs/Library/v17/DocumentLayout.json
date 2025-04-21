@@ -3,24 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|c:\\users\\joelv\\projectspoo\\unidad3\\library\\library.api\\services\\libraryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|solutionrelative:library.api\\services\\libraryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|c:\\users\\joelv\\projectspoo\\unidad3\\library\\library.api\\controllers\\bookshelfccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|solutionrelative:library.api\\controllers\\bookshelfccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|c:\\users\\joelv\\projectspoo\\unidad3\\library\\library.api\\controllers\\bookshelfacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|solutionrelative:library.api\\controllers\\bookshelfacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|c:\\users\\joelv\\projectspoo\\unidad3\\library\\library.api\\services\\bookshelfaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|solutionrelative:library.api\\services\\bookshelfaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|c:\\users\\joelv\\projectspoo\\unidad3\\library\\library.api\\services\\bookshelfcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|solutionrelative:library.api\\services\\bookshelfcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|c:\\users\\joelv\\projectspoo\\unidad3\\library\\library.api\\services\\bookshelfaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|solutionrelative:library.api\\services\\bookshelfaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|c:\\users\\joelv\\projectspoo\\unidad3\\library\\library.api\\controllers\\bookshelfccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|solutionrelative:library.api\\controllers\\bookshelfccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|c:\\users\\joelv\\projectspoo\\unidad3\\library\\library.api\\services\\interfaces\\ibookshelfcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|solutionrelative:library.api\\services\\interfaces\\ibookshelfcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|c:\\users\\joelv\\projectspoo\\unidad3\\library\\library.api\\services\\bookshelfbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|solutionrelative:library.api\\services\\bookshelfbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|c:\\users\\joelv\\projectspoo\\unidad3\\library\\library.api\\services\\interfaces\\ibookshelfaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|solutionrelative:library.api\\services\\interfaces\\ibookshelfaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|c:\\users\\joelv\\projectspoo\\unidad3\\library\\library.api\\controllers\\bookshelfacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|solutionrelative:library.api\\controllers\\bookshelfacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|c:\\users\\joelv\\projectspoo\\unidad3\\library\\library.api\\controllers\\bookshelfbcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|solutionrelative:library.api\\controllers\\bookshelfbcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|c:\\users\\joelv\\projectspoo\\unidad3\\library\\library.api\\services\\interfaces\\ibookshelfbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|solutionrelative:library.api\\services\\interfaces\\ibookshelfbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|c:\\users\\joelv\\projectspoo\\unidad3\\library\\library.api\\services\\libraryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|solutionrelative:library.api\\services\\libraryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,66 +50,134 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "IBookshelfCService.cs",
+              "DocumentMoniker": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Services\\Interfaces\\IBookshelfCService.cs",
+              "RelativeDocumentMoniker": "Library.API\\Services\\Interfaces\\IBookshelfCService.cs",
+              "ToolTip": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Services\\Interfaces\\IBookshelfCService.cs*",
+              "RelativeToolTip": "Library.API\\Services\\Interfaces\\IBookshelfCService.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T01:45:05.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BookshelfBController.cs",
+              "DocumentMoniker": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Controllers\\BookshelfBController.cs",
+              "RelativeDocumentMoniker": "Library.API\\Controllers\\BookshelfBController.cs",
+              "ToolTip": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Controllers\\BookshelfBController.cs",
+              "RelativeToolTip": "Library.API\\Controllers\\BookshelfBController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T01:43:11.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BookshelfBService.cs",
+              "DocumentMoniker": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Services\\BookshelfBService.cs",
+              "RelativeDocumentMoniker": "Library.API\\Services\\BookshelfBService.cs",
+              "ToolTip": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Services\\BookshelfBService.cs",
+              "RelativeToolTip": "Library.API\\Services\\BookshelfBService.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwC8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T01:42:06.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IBookshelfBService.cs",
+              "DocumentMoniker": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Services\\Interfaces\\IBookshelfBService.cs",
+              "RelativeDocumentMoniker": "Library.API\\Services\\Interfaces\\IBookshelfBService.cs",
+              "ToolTip": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Services\\Interfaces\\IBookshelfBService.cs",
+              "RelativeToolTip": "Library.API\\Services\\Interfaces\\IBookshelfBService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T01:42:02.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IBookshelfAService.cs",
+              "DocumentMoniker": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Services\\Interfaces\\IBookshelfAService.cs",
+              "RelativeDocumentMoniker": "Library.API\\Services\\Interfaces\\IBookshelfAService.cs",
+              "ToolTip": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Services\\Interfaces\\IBookshelfAService.cs",
+              "RelativeToolTip": "Library.API\\Services\\Interfaces\\IBookshelfAService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T01:34:35.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "BookshelfCController.cs",
               "DocumentMoniker": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Controllers\\BookshelfCController.cs",
               "RelativeDocumentMoniker": "Library.API\\Controllers\\BookshelfCController.cs",
               "ToolTip": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Controllers\\BookshelfCController.cs",
               "RelativeToolTip": "Library.API\\Controllers\\BookshelfCController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAcwBwAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAUwBcAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-19T21:39:11.371Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "BookshelfCService.cs",
               "DocumentMoniker": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Services\\BookshelfCService.cs",
               "RelativeDocumentMoniker": "Library.API\\Services\\BookshelfCService.cs",
               "ToolTip": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Services\\BookshelfCService.cs",
               "RelativeToolTip": "Library.API\\Services\\BookshelfCService.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAqwCAAAABQAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAuwC4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T21:36:28.937Z"
+              "WhenOpened": "2025-04-19T21:36:28.937Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "BookshelfAService.cs",
               "DocumentMoniker": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Services\\BookshelfAService.cs",
               "RelativeDocumentMoniker": "Library.API\\Services\\BookshelfAService.cs",
               "ToolTip": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Services\\BookshelfAService.cs",
               "RelativeToolTip": "Library.API\\Services\\BookshelfAService.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAYwEUAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwDAAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T20:56:54.994Z"
+              "WhenOpened": "2025-04-19T20:56:54.994Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "BookshelfAController.cs",
               "DocumentMoniker": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Controllers\\BookshelfAController.cs",
               "RelativeDocumentMoniker": "Library.API\\Controllers\\BookshelfAController.cs",
               "ToolTip": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Controllers\\BookshelfAController.cs",
               "RelativeToolTip": "Library.API\\Controllers\\BookshelfAController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T21:32:12.237Z"
+              "WhenOpened": "2025-04-19T21:32:12.237Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "LibraryService.cs",
               "DocumentMoniker": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Services\\LibraryService.cs",
               "RelativeDocumentMoniker": "Library.API\\Services\\LibraryService.cs",
               "ToolTip": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Services\\LibraryService.cs",
               "RelativeToolTip": "Library.API\\Services\\LibraryService.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAkwFkAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAkwFkAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-19T20:55:36.419Z",
               "EditorCaption": ""

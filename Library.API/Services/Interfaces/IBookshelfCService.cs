@@ -8,6 +8,6 @@ namespace Library.API.Services.Interfaces
     {
         Task<ResponseDto<BookshelfCActionResponseDto>> CreateAsync(BookshelfCCreateDto dto);
         Task<ResponseDto<BookshelfCActionResponseDto>> DeleteAsync(Guid id);
-        Task<ResponseDto<PaginationDto<List<BookshelfCDto>>>> GetListAsync(int page = 1, int pageSize = 0);
+        Task<ResponseDto<PaginationDto<List<BookshelfCDto>>>> GetListAsync(string searchTerm = "", int page = 1, int pageSize = 0);
     }
 }
