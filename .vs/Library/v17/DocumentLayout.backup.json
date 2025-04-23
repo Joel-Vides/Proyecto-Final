@@ -7,20 +7,20 @@
       "RelativeMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|solutionrelative:library.api\\services\\bookshelfaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|c:\\users\\joelv\\projectspoo\\unidad3\\library\\library.api\\services\\interfaces\\ibookshelfaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|solutionrelative:library.api\\services\\interfaces\\ibookshelfaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|c:\\users\\joelv\\projectspoo\\unidad3\\library\\library.api\\services\\bookshelfbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|solutionrelative:library.api\\services\\bookshelfbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|c:\\users\\joelv\\projectspoo\\unidad3\\library\\library.api\\services\\bookshelfcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|solutionrelative:library.api\\services\\bookshelfcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|c:\\users\\joelv\\projectspoo\\unidad3\\library\\library.api\\services\\libraryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|solutionrelative:library.api\\services\\libraryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|c:\\users\\joelv\\projectspoo\\unidad3\\library\\library.api\\services\\interfaces\\ibookshelfaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|solutionrelative:library.api\\services\\interfaces\\ibookshelfaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|c:\\users\\joelv\\projectspoo\\unidad3\\library\\library.api\\services\\bookshelfcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D48206-8AA4-40E2-B031-B1FC45FC748B}|Library.API\\Library.API.csproj|solutionrelative:library.api\\services\\bookshelfcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "IBookshelfAService.cs",
               "DocumentMoniker": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Services\\Interfaces\\IBookshelfAService.cs",
               "RelativeDocumentMoniker": "Library.API\\Services\\Interfaces\\IBookshelfAService.cs",
@@ -47,26 +47,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "BookshelfCService.cs",
               "DocumentMoniker": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Services\\BookshelfCService.cs",
               "RelativeDocumentMoniker": "Library.API\\Services\\BookshelfCService.cs",
               "ToolTip": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Services\\BookshelfCService.cs",
               "RelativeToolTip": "Library.API\\Services\\BookshelfCService.cs",
-              "ViewState": "AgIAAHoAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJ8AAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-23T20:00:25.21Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "BookshelfBService.cs",
               "DocumentMoniker": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Services\\BookshelfBService.cs",
               "RelativeDocumentMoniker": "Library.API\\Services\\BookshelfBService.cs",
               "ToolTip": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Services\\BookshelfBService.cs",
               "RelativeToolTip": "Library.API\\Services\\BookshelfBService.cs",
-              "ViewState": "AgIAAIkAAAAAAAAAAAAgwJUAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIAAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-23T19:37:56.127Z",
               "EditorCaption": ""
@@ -79,20 +79,20 @@
               "RelativeDocumentMoniker": "Library.API\\Services\\BookshelfAService.cs",
               "ToolTip": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Services\\BookshelfAService.cs",
               "RelativeToolTip": "Library.API\\Services\\BookshelfAService.cs",
-              "ViewState": "AgIAAI4AAAAAAAAAAAAkwJ0AAABYAAAAAAAAAA==",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAkwKIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-19T20:56:54.994Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "LibraryService.cs",
               "DocumentMoniker": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Services\\LibraryService.cs",
               "RelativeDocumentMoniker": "Library.API\\Services\\LibraryService.cs",
               "ToolTip": "C:\\Users\\joelv\\ProjectsPoo\\Unidad3\\Library\\Library.API\\Services\\LibraryService.cs",
               "RelativeToolTip": "Library.API\\Services\\LibraryService.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAowJoAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAiwJEAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-23T18:38:33.371Z",
               "EditorCaption": ""
