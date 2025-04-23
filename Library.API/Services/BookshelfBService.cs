@@ -16,15 +16,17 @@ namespace Library.API.Services
     {
         private readonly LibraryDBContext _context;
         private readonly IMapper _mapper;
+        private readonly ILibraryService _libraryService;
 
         // Para la Pagination
         private readonly int PAGE_SIZE;
         private readonly int PAGE_SIZE_LIMIT;
 
-        public BookshelfBService(LibraryDBContext context, IMapper mapper, IConfiguration configuration)
+        public BookshelfBService(LibraryDBContext context, IMapper mapper, IConfiguration configuration, ILibraryService libraryService)
         {
             _context = context;
             _mapper = mapper;
+            _libraryService = libraryService;
 
             // Para La Pagination
             PAGE_SIZE = configuration.GetValue<int>("PageSize");
@@ -109,9 +111,23 @@ namespace Library.API.Services
                 };
             }
 
+            // Verificar si el Libro ya esta Asignado a Otra Estanteria
+            if (await _libraryService.AsignedBookAsync(dto.BookId))
+            {
+                return new ResponseDto<BookshelfBActionResponseDto>
+                {
+                    StatusCode = HttpStatusCode.BAD_REQUEST,
+                    Status = false,
+                    Message = "Este libro ya está asignado a otra estantería."
+                };
+            }
+
             // Agregar el libro a la estantería A
             _context.BookshelfB.Add(bookShelfEntity);
             await _context.SaveChangesAsync();
+
+            // Cambiar el Estado del Libro de la Tabla de Libros a Asignado
+            await _libraryService.UpdateBookStateAsync(dto.BookId, "asignado");
 
             return new ResponseDto<BookshelfBActionResponseDto>
             {
@@ -138,6 +154,13 @@ namespace Library.API.Services
 
             _context.BookshelfB.Remove(bookshelfBEntity);
             await _context.SaveChangesAsync();
+
+            // Actualizar el Libro de la Tabla Libros a Disponible
+            bool stillAsigned = await _libraryService.AsignedBookAsync(bookshelfBEntity.BookId);
+            if (!stillAsigned)
+            {
+                await _libraryService.UpdateBookStateAsync(bookshelfBEntity.BookId, "disponible");
+            }
 
             return new ResponseDto<BookshelfBActionResponseDto>
             {

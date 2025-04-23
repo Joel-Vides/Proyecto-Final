@@ -139,5 +139,24 @@ namespace Library.API.Services
                 Data = bookshelf // Opcional: enviar la estantería como dato adicional
             };
         }
+
+        // Para bloquar libros
+        public async Task<bool> AsignedBookAsync(Guid? IdBook)
+        {
+            return await _context.BookshelfA.AnyAsync(b => b.BookId == IdBook) ||
+           await _context.BookshelfB.AnyAsync(b => b.BookId == IdBook) ||
+           await _context.BookshelfC.AnyAsync(b => b.BookId == IdBook);
+        }
+
+        // Para Actualizar el Estado de los Libros
+        public async Task UpdateBookStateAsync(Guid? IdBook, string newState)
+        {
+            var book = await _context.Library.FindAsync(IdBook);
+            if (book != null)
+            {
+                book.Estado = newState;
+                await _context.SaveChangesAsync();
+            }
+        }
     }
 }

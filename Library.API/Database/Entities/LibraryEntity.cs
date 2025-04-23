@@ -32,7 +32,7 @@ namespace Library.API.Database.Entities
         [Required]
         public int PublicationYear { get; set; }
 
-
+        public string Estado { get; set; } = "disponible";
 
     }
 }

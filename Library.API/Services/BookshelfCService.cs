@@ -4,6 +4,7 @@ using Library.API.Database;
 using Library.API.Database.Entities;
 using Library.API.Database.Entities.Common;
 using Library.API.Dtos.BookshelfA;
+using Library.API.Dtos.BookshelfB;
 using Library.API.Dtos.BookshelfC;
 using Library.API.Dtos.Common;
 using Library.API.Services.Interfaces;
@@ -15,19 +16,22 @@ namespace Library.API.Services
     {
         private readonly LibraryDBContext _context;
         private readonly IMapper _mapper;
+        private readonly ILibraryService _libraryService;
 
         // Para la Pagination
         private readonly int PAGE_SIZE;
         private readonly int PAGE_SIZE_LIMIT;
 
-        public BookshelfCService(LibraryDBContext context, IMapper mapper, IConfiguration configuration)
+        public BookshelfCService(LibraryDBContext context, IMapper mapper, IConfiguration configuration, ILibraryService libraryService)
         {
             _context = context;
             _mapper = mapper;
+            _libraryService = libraryService;
 
             // Para La Pagination
             PAGE_SIZE = configuration.GetValue<int>("PageSize");
             PAGE_SIZE_LIMIT = configuration.GetValue<int>("PageSizeLimit");
+            _libraryService = libraryService;
         }
 
         public async Task<ResponseDto<PaginationDto<List<BookshelfCDto>>>> GetListAsync(
@@ -108,9 +112,23 @@ namespace Library.API.Services
                 };
             }
 
+            // Verificar si el Libro ya esta Asignado a Otra Estanteria
+            if (await _libraryService.AsignedBookAsync(dto.BookId))
+            {
+                return new ResponseDto<BookshelfCActionResponseDto>
+                {
+                    StatusCode = HttpStatusCode.BAD_REQUEST,
+                    Status = false,
+                    Message = "Este libro ya está asignado a otra estantería."
+                };
+            }
+
             // Agregar el libro a la estantería A
             _context.BookshelfC.Add(bookShelfEntity);
             await _context.SaveChangesAsync();
+
+            // Cambiar el Estado del Libro de la Tabla de Libros a Asignado
+            await _libraryService.UpdateBookStateAsync(dto.BookId, "asignado");
 
             return new ResponseDto<BookshelfCActionResponseDto>
             {
@@ -137,6 +155,13 @@ namespace Library.API.Services
 
             _context.BookshelfC.Remove(bookshelfCEntity);
             await _context.SaveChangesAsync();
+
+            // Actualizar el Libro de la Tabla Libros a Disponible
+            bool stillAsigned = await _libraryService.AsignedBookAsync(bookshelfCEntity.BookId);
+            if (!stillAsigned)
+            {
+                await _libraryService.UpdateBookStateAsync(bookshelfCEntity.BookId, "disponible");
+            }
 
             return new ResponseDto<BookshelfCActionResponseDto>
             {

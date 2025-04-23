@@ -1,8 +1,10 @@
-﻿using AutoMapper;
+﻿using System.Net;
+using AutoMapper;
 using Library.API.Constants;
 using Library.API.Database;
 using Library.API.Database.Entities;
 using Library.API.Database.Entities.Common;
+using Library.API.Dtos.Books;
 using Library.API.Dtos.BookshelfA;
 using Library.API.Dtos.Common;
 using Library.API.Services.Interfaces;
@@ -14,20 +16,23 @@ namespace Library.API.Services
     {
         private readonly LibraryDBContext _context;
         private readonly IMapper _mapper;
+        private readonly ILibraryService _libraryService;
 
         // Para la Pagination
         private readonly int PAGE_SIZE;
         private readonly int PAGE_SIZE_LIMIT;
 
-        public BookshelfAService(LibraryDBContext context, IMapper mapper, IConfiguration configuration)
+        public BookshelfAService(LibraryDBContext context, IMapper mapper, IConfiguration configuration, ILibraryService libraryService)
         {
             _context = context;
             _mapper = mapper;
+            _libraryService = libraryService;
 
             // Para La Pagination
             PAGE_SIZE = configuration.GetValue<int>("PageSize");
             PAGE_SIZE_LIMIT = configuration.GetValue<int>("PageSizeLimit");
         }
+
         public async Task<ResponseDto<PaginationDto<List<BookshelfADto>>>> GetListAsync(
             string searchTerm = "" ,int page = 1, int pageSize = 0)
         {
@@ -56,7 +61,7 @@ namespace Library.API.Services
 
             return new ResponseDto<PaginationDto<List<BookshelfADto>>>
             {
-                StatusCode = HttpStatusCode.OK,
+                StatusCode = Constants.HttpStatusCode.OK,
                 Status = true,
                 Message = bookshelfAEntity.Count() > 0
                     ? "Registros Encontrados"
@@ -76,6 +81,7 @@ namespace Library.API.Services
 
         } 
 
+
         public async Task<ResponseDto<BookshelfAActionResponseDto>> CreateAsync(BookshelfACreateDto dto)
         {
             // Verificar la cantidad actual de libros en la estantería A
@@ -84,7 +90,7 @@ namespace Library.API.Services
             {
                 return new ResponseDto<BookshelfAActionResponseDto>
                 {
-                    StatusCode = HttpStatusCode.BAD_REQUEST,
+                    StatusCode = Constants.HttpStatusCode.BAD_REQUEST,
                     Status = false,
                     Message = "La estantería A está llena (Máximo 50 registros)."
                 };
@@ -100,9 +106,20 @@ namespace Library.API.Services
             {
                 return new ResponseDto<BookshelfAActionResponseDto>
                 {
-                    StatusCode = HttpStatusCode.BAD_REQUEST,
+                    StatusCode = Constants.HttpStatusCode.BAD_REQUEST,
                     Status = false,
                     Message = "El Libro no Existe en la Base de Datos."
+                };
+            }
+
+            // Verificar si el Libro ya esta Asignado a Otra Estanteria
+            if (await _libraryService.AsignedBookAsync(dto.BookId))
+            {
+                return new ResponseDto<BookshelfAActionResponseDto>
+                {
+                    StatusCode = Constants.HttpStatusCode.BAD_REQUEST,
+                    Status = false,
+                    Message = "Este libro ya está asignado a otra estantería."
                 };
             }
 
@@ -110,9 +127,12 @@ namespace Library.API.Services
             _context.BookshelfA.Add(bookShelfEntity);
             await _context.SaveChangesAsync();
 
+            // Cambiar el Estado del Libro de la Tabla de Libros a Asignado
+            await _libraryService.UpdateBookStateAsync(dto.BookId, "asignado");
+
             return new ResponseDto<BookshelfAActionResponseDto>
             {
-                StatusCode = HttpStatusCode.CREATED,
+                StatusCode = Constants.HttpStatusCode.CREATED,
                 Status = true,
                 Message = "Registro Creado Correctamente.",
                 Data = _mapper.Map<BookshelfAActionResponseDto>(bookShelfEntity)
@@ -128,7 +148,7 @@ namespace Library.API.Services
             {
                 return new ResponseDto<BookshelfAActionResponseDto>
                 {
-                    StatusCode = HttpStatusCode.NOT_FOUND,
+                    StatusCode = Constants.HttpStatusCode.NOT_FOUND,
                     Status = false,
                     Message = "Registro no Encontrado"
                 };
@@ -137,13 +157,22 @@ namespace Library.API.Services
             _context.BookshelfA.Remove(bookshelfAEntity);
             await _context.SaveChangesAsync();
 
+            // Actualizar el Libro de la Tabla Libros a Disponible
+            bool stillAsigned = await _libraryService.AsignedBookAsync(bookshelfAEntity.BookId);
+            if (!stillAsigned)
+            {
+                await _libraryService.UpdateBookStateAsync(bookshelfAEntity.BookId, "disponible");
+            }
+
+
             return new ResponseDto<BookshelfAActionResponseDto>
             {
-                StatusCode = HttpStatusCode.OK,
+                StatusCode = Constants.HttpStatusCode.OK,
                 Status = true,
                 Message = "Registro Eliminado Correctamente",
                 Data = _mapper.Map<BookshelfAActionResponseDto>(bookshelfAEntity)
             };
         }
+
     }
 }
